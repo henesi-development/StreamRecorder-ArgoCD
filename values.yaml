@@ -1,0 +1,18 @@
+applications:
+  api:
+    name: streamrecorder-api
+    namespace: dev
+    repoPath: streamrecorder-api
+
+  postgresql:
+    name: streamrecorder-postgresql
+    namespace: dev
+    repoPath: streamrecorder-postgresql
+  
+  network:
+    name: streamrecorder-network
+    namespace: dev
+    repoPath: streamrecorder-network
+
+  cluster:
+    server: https://192.168.100.67:63480

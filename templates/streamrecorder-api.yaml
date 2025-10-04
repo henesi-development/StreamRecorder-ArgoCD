@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: {{ .Values.applications.backend.name }}
+  namespace: development
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/henesi/GlobalBank-Helm-Charts/
+    targetRevision: master
+    path: {{ .Values.applications.backend.repoPath }}
+  destination:
+    server: {{ .Values.applications.cluster.server }}
+    namespace: {{ .Values.applications.backend.namespace }}
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
