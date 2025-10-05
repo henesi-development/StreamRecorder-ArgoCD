@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: {{ .Values.applications.network.name }}
-  namespace: development
+  namespace: {{ .Values.applications.network.namespace }}
 spec:
   project: default
   source:
