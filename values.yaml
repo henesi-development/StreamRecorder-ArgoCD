@@ -15,4 +15,4 @@ applications:
     repoPath: streamrecorder-network
 
   cluster:
-    server: https://kubernetes.default.svc
+    name: in-cluster

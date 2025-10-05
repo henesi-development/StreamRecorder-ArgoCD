@@ -10,7 +10,7 @@ spec:
     targetRevision: master
     path: {{ .Values.applications.postgresql.repoPath }}
   destination:
-    server: {{ .Values.applications.cluster.server }}
+    name: {{ .Values.applications.cluster.name }}
     namespace: {{ .Values.applications.postgresql.namespace }}
   syncPolicy:
     automated:

@@ -10,7 +10,7 @@ spec:
     targetRevision: master
     path: {{ .Values.applications.api.repoPath }}
   destination:
-    server: {{ .Values.applications.cluster.server }}
+    name: {{ .Values.applications.cluster.name }}
     namespace: {{ .Values.applications.api.namespace }}
   syncPolicy:
     automated:
