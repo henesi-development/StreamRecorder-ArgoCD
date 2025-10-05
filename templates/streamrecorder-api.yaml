@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/henesi/GlobalBank-Helm-Charts/
+    repoURL: https://github.com/henesi-development/StreamRecorder-Helm-Charts
     targetRevision: master
     path: {{ .Values.applications.backend.repoPath }}
   destination:
