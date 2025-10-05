@@ -3,11 +3,6 @@ applications:
     name: streamrecorder-api
     namespace: stream-recorder
     repoPath: streamrecorder-api
-
-  postgresql:
-    name: streamrecorder-postgresql
-    namespace: stream-recorder
-    repoPath: streamrecorder-postgresql
   
   network:
     name: streamrecorder-network
