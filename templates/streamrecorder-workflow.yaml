@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/henesi-development/StreamRecorder-Workflow
+    repoURL: https://github.com/henesi-development/StreamRecorder-Helm-Charts
     targetRevision: master
     path: {{ .Values.applications.workflow.repoPath }}
   destination:

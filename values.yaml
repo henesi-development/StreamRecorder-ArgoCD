@@ -17,7 +17,7 @@ applications:
   workflow:
     name: streamrecorder-workflow
     namespace: stream-recorder
-    repoPath: .
+    repoPath: streamrecorder-workflow
 
   cluster:
     name: in-cluster
