@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: {{ .Values.applications.api.name }}
+  name: {{ .Values.applications.filebrowser.name }}
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/henesi-development/StreamRecorder-Helm-Charts
     targetRevision: master
-    path: {{ .Values.applications.api.repoPath }}
+    path: {{ .Values.applications.filebrowser.repoPath }}
   destination:
     name: {{ .Values.applications.cluster.name }}
-    namespace: {{ .Values.applications.api.namespace }}
+    namespace: {{ .Values.applications.filebrowser.namespace }}
   syncPolicy:
     automated:
       prune: true
