@@ -19,5 +19,10 @@ applications:
     namespace: stream-recorder
     repoPath: streamrecorder-workflow
 
+  filebrowser:
+    name: streamrecorder-filebrowser
+    namespace: stream-recorder
+    repoPath: streamrecorder-filebrowser
+
   cluster:
     name: in-cluster
