@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: {{ .Values.applications.workflow.name }}
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/henesi-development/StreamRecorder-Workflow
+    targetRevision: master
+    path: {{ .Values.applications.workflow.repoPath }}
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: stream-recorder
+  syncPolicy:
+    automated:
+      prune: true        # automatically delete resources removed from Git
+      selfHeal: true     # automatically restore resources changed in cluster

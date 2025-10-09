@@ -9,5 +9,15 @@ applications:
     namespace: stream-recorder
     repoPath: streamrecorder-network
 
+  db:
+    name: streamrecorder-db
+    namespace: stream-recorder
+    repoPath: streamrecorder-db
+
+  workflow:
+    name: streamrecorder-workflow
+    namespace: stream-recorder
+    repoPath: .
+
   cluster:
     name: in-cluster

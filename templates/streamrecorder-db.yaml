@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: {{ .Values.applications.api.name }}
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/henesi-development/StreamRecorder-Helm-Charts
+    targetRevision: master
+    path: {{ .Values.applications.api.repoPath }}
+  destination:
+    name: {{ .Values.applications.cluster.name }}
+    namespace: {{ .Values.applications.api.namespace }}
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
