@@ -24,5 +24,10 @@ applications:
     namespace: stream-recorder
     repoPath: streamrecorder-minio
 
+  etl:
+    name: streamrecorder-etl
+    namespace: stream-recorder
+    repoPath: streamrecorder-etl
+
   cluster:
     name: in-cluster
