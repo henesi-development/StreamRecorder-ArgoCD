@@ -29,5 +29,15 @@ applications:
     namespace: stream-recorder
     repoPath: streamrecorder-etl
 
+  trino:
+    name: streamrecorder-trino
+    namespace: stream-recorder
+    repoPath: streamrecorder-trino
+
+  superset:
+    name: streamrecorder-superset
+    namespace: stream-recorder
+    repoPath: streamrecorder-superset
+
   cluster:
     name: in-cluster
